@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="c"></div>
+    <button onclick="cl()">button</button>
+   
+        <script>
+            const div = document.getElementsByClassName("c")[0]; // Accessing the first div with class 'c'
+            
+            function cl() {
+                let para = document.createElement("div");
+                para.style.height = "20px";
+                para.style.width = "20px";
+                para.style.border = "2px solid black"; // Added 'solid' to define the border style
+                para.style.backgroundColor = "green";
+                para.style.borderRadius = "50%";
+                div.appendChild(para); // Appending the actual element
+            }
+        </script>
+    
+      
+    
+</body>
+</html>
